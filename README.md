@@ -1,5 +1,12 @@
 # DiscordBot
 
+## Instructions to run locally 
+1. Clone the repo in a directory of your choosing.
+3. Make a file named `.env`
+4. Paste this line into `.env` and insert your discord bot token: ```DISCORD_TOKEN = "your token here"```
+4. Run: ```python3 bot.py``` 
+5. To bring the bot down press control+ c 
+
 ## Instructions for Docker
 1. Clone the repo in a directory of your choosing.
 2. Install docker at this link: https://docs.docker.com/get-docker/
@@ -10,7 +17,7 @@
 
 
 
-# Running DiscordBot on AWS EC2 instance 
+## Instructions for AWS 
 1. Create EC2 instance 
 2. create Key pair name and save the file to be able to connect to the instance 
 3. You must create security group to allow http port 80 and if you want to connect to the instance allow port 22 to connect to the instance. 
