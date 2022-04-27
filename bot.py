@@ -13,6 +13,8 @@ client.forbidden_words = []
 @client.event 
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
+    # Reset forbidden words on restart
+    client.forbidden_words = []
 
 @client.event
 async def on_message(message):
@@ -25,23 +27,18 @@ async def on_message(message):
     if message.content.startswith('$forbid'):
         client.forbidden_words.append(message.content[8:])
         await message.channel.send('Word added to forbidden words list.')
-    
-    if message.content.startswith('$delete'):
-        await message.delete()
-        await message.channel.send('Message deleted.')
+    else:
+        for word in client.forbidden_words:
+            if word in message.content.split():
+                await message.delete()
+                await message.channel.send('Hey! You can\'t say that here!')
 
+    # Should probably add admin privileges for this
     if message.content.startswith('$showforbidden'):
         if len(client.forbidden_words) == 0:
             await message.channel.send("There are no forbidden words yet.")
         else:
             await message.channel.send("Forbidden words: " + ", ".join(client.forbidden_words))
-
-    for content in message.content:
-        if any(word in content for word in client.forbidden_words):
-            print("Naughty naughty!")
-            await message.delete()
-            await message.channel.send('Message deleted.')
-
 
 try:
     client.run(token)
