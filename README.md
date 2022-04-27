@@ -41,5 +41,5 @@ sudo .venv/bin/python3 bot.py
 
 # Technologies 
 ## AWS EC2 
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html
-https://dev.to/rishabk7/host-your-discord-bot-on-ec2-instance-aws-5c07
+1. https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html
+2. https://dev.to/rishabk7/host-your-discord-bot-on-ec2-instance-aws-5c07
