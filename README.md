@@ -37,3 +37,9 @@ sudo .venv/bin/python3 bot.py
 6. Create .env file
 7. Write discord token key 
 8. run the bot.py using virtual environment
+
+
+# Technologies 
+## AWS EC2 
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html
+https://dev.to/rishabk7/host-your-discord-bot-on-ec2-instance-aws-5c07
