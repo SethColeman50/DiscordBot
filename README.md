@@ -1,4 +1,4 @@
-# DiscordBot
+# DiscordBot 
 
 ## Instructions to run locally 
 1. Clone the repo in a directory of your choosing.
