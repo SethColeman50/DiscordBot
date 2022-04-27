@@ -13,12 +13,14 @@
 2. Login on CLI
 3. Configure your .env file through the Settings -> Config on the Heroku web GUI
 4. Add a heroku.yml with
-```	build:
-		docker:
-			web: Dockerfile```
+```	
+build:	
+	docker:
+		web: Dockerfile
+```
 
-5. In the terminal run `heroku stack:set container`
-6. Run `heroku ps:scale web=1`
+5. In the terminal run ```heroku stack:set container```
+6. Run ```heroku ps:scale web=1```
 
 References used:
 [Heroku tutorial|<https://devcenter.heroku.com/articles/build-docker-images-heroku-yml>]
