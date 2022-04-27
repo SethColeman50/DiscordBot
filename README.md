@@ -2,9 +2,11 @@
 
 ## Instructions to run locally 
 1. Clone the repo in a directory of your choosing.
+2. Run the following commands to create virtual environment```python3 -m venv .venv ```
+3. Run the following commands to install the required libraries ```.venv/bin/pip3 install -r requirements.txt ```
 3. Make a file named `.env`
 4. Paste this line into `.env` and insert your discord bot token: ```DISCORD_TOKEN = "your token here"```
-4. Run: ```python3 bot.py``` 
+4. Run the following commands to run the bot using the virtual environment you created : ```.venv/bin/python3 bot.py ```  
 5. To bring the bot down press control+ c 
 
 ## Instructions for Docker
